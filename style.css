@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing:border-box;
+}
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background:linear-gradient(120deg,#2a045a,#4e085f);
+    padding: 10px;
+}
+.Todo-App {
+    width: 100%;
+    max-width: 540px;
+    background: #fff;
+    margin: 100px auto 20px;
+    padding: 40px 30px 80px;
+    border-radius: 20px;
+}
+.Todo-App h2{
+    color: #00102b;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.raw {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background:#eef0f5;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom:30px;
+}
+input{
+    flex: 1;
+    background: transparent;
+    border: none;
+    padding:10px;
+    outline:none;
+    font-weight:15px;
+}
+button{
+    background:#f45847;
+    color: #fff;
+    cursor:pointer;
+    border:none;
+    padding:15px 60px;
+    border-radius:50px;
+    outline:none;
+    font-size:17px;
+}
+ul li{
+    list-style:none;
+    padding: 12px 8px 12px 50px;
+    font-size:18px;
+    position:relative;
+    user-select:none;
+    cursor:pointer;
+}
+ul li::before{
+    position:absolute;
+    content: '';
+    border-radius:50%;
+    height:20px;
+    width:20px;
+    background-size:cover;
+    background-position:center;
+    top:12px;
+    left:8px;
+    background-image: url("images/unchecked.png");
+}
+ul li.checked{
+    color: #888;
+    text-decoration:line-through;
+}
+ul li.checked::before{
+    background-image: url("images/checked.png");
+}
+ul li span{
+    position:absolute;
+    right:0px;
+    height: 40px;
+    width:40px;
+    top:5px;
+    color:#555;
+    font-size:22px;
+    text-align:center;
+    line-height:40px;
+    border-radius:50%
+}
+ul li span:hover{
+    background: #eaecf0;
+}
+.panel{
+    position:fixed;
+    top:0;
+    right:-350px;
+    width:300px;
+    height:100vh;
+    background:#6d6082;
+    padding:20px;
+    overflow-y:auto;
+    transition:0.3s;
+    border-left: 2px solid #fff;
+}
+.panel.active{
+    right:0;
+}
+.history-content{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:20px;
+}
+#closehistory{
+    background:none;
+    border:none;
+    font-size:20px;
+    cursor:pointer;
+}
+.historybutton{
+    position:fixed;
+    top:20px;
+    right:20px;
+    background:#f45847;
+    color:white;
+    padding:10px 16px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+}

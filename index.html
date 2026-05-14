@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+    <title>To do list </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <div class="container">
+    <div class="Todo-App">
+        <h2>To-Do list
+            <button id="openhistory" class="historybutton">History</button>
+        </h2>
+        <div class="raw">
+            <input type="text" id="input-box" placeholder="add your new task">
+            <button onclick="addtask()">Add</button>
+            </div>
+            <ul id="list-container">
+            </ul>
+    </div>
+    <div id="historypanel" class="panel">
+        <div class="history-content">
+            <h3>completed tasks</h3>
+            <button id="closehistory" class="closebutton">x</button>
+            </div>
+            <ul id="history-list">
+            </ul>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.9.1/tsparticles.confetti.bundle.min.js"></script>
+ </body>
+ </html>
+
