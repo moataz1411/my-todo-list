@@ -5,8 +5,11 @@ It also includes a history feature and uses Local Storage to save tasks permanen
 - Features
 Add new tasks instantly
 Delete completed
+
 View task history
+
 Automatic saving using Local Storage
+
 Simple UI
 
 - languages Used:
