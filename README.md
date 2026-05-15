@@ -14,8 +14,8 @@ Automatic saving using Local Storage
 Simple UI
 
 - languages Used:
-HTML
-CSS
+HTML-
+CSS-
 JavaScript
 
 How It Works
