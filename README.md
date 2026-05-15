@@ -1,9 +1,10 @@
-**todo-app**
+**todo-app**:
 This is a simple and interactive To-Do List web application that allows users to add, delete, and manage tasks efficiently.
 It also includes a history feature and uses Local Storage to save tasks permanently in the browser.
 
-- Features
+- Features:
 Add new tasks instantly
+
 Delete completed
 
 View task history
@@ -20,6 +21,7 @@ JavaScript
 How It Works
 When you add a task it is stored in the browser Local Storage
 Tasks are loaded automatically when the page opens.
+
 History panel lets you review past actions
 
 - Preview
